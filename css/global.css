@@ -8,6 +8,14 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: '../fonts/Univers LT CYR 45';
+    src: url('../fonts/UniversLTCYR-65Bold.woff2') format('woff2'),
+        url('../fonts/UniversLTCYR-65Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
 #preload {
     display: flex;
     justify-content: center;
@@ -241,7 +249,7 @@ span {
     z-index: 100;
 }
 
-@media screen and (max-width: 786px) {
+@media screen and (max-width: 1200px) {
 
     .number_indicator {
         display: none;

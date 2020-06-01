@@ -14,8 +14,8 @@
 .servises_seaction {
     display: grid;
     justify-self: center;
-    align-self: end;
-    padding-bottom: 2vh;
+    align-self: center;
+/*    padding-bottom: 2vh;*/
 }
 
 .servises_seaction p {
@@ -218,4 +218,17 @@ images/curso.png .scroll_line {
         text-transform: uppercase;
     }
 
+}
+
+@media screen and (max-width: 1300px) {
+
+    .scroll_line .css-loader-line {
+    display: block;
+    width: 30px;
+    overflow: hidden;
+    position: relative;
+    -webkit-transition: opacity 0.3s cubic-bezier(0.4, 0, 0, 1);
+    transition: opacity 0.4s cubic-bezier(0.4, 0, 0, 1);
+    height: 1px;
+}
 }

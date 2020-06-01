@@ -1,3 +1,12 @@
+@font-face {
+    font-family: '../fonts/Univers LT CYR 45';
+    src: url('../fonts/UniversLTCYR-65Bold.woff2') format('woff2'),
+        url('../fonts/UniversLTCYR-65Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+
 .list_site {
     display: flex;
     justify-content: space-between;
