@@ -14,8 +14,8 @@
 .servises_seaction {
     display: grid;
     justify-self: center;
-    align-self: center;
-/*    padding-bottom: 2vh;*/
+    align-self: end;
+    padding-bottom: 2vh;
 }
 
 .servises_seaction p {
