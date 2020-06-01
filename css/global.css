@@ -9,11 +9,9 @@
 }
 
 @font-face {
-    font-family: '../fonts/Univers LT CYR 45';
-    src: url('../fonts/UniversLTCYR-65Bold.woff2') format('woff2'),
-        url('../fonts/UniversLTCYR-65Bold.woff') format('woff');
-    font-weight: bold;
-    font-style: normal;
+    font-family: "Univers LT Std";
+    src: url("//db.onlinewebfonts.com/t/8de29731a2a1099f808c727450f5dd10.eot");
+    src: url("//db.onlinewebfonts.com/t/8de29731a2a1099f808c727450f5dd10.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/8de29731a2a1099f808c727450f5dd10.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/8de29731a2a1099f808c727450f5dd10.woff") format("woff"), url("//db.onlinewebfonts.com/t/8de29731a2a1099f808c727450f5dd10.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/8de29731a2a1099f808c727450f5dd10.svg#Univers LT Std") format("svg");
 }
 
 #preload {
