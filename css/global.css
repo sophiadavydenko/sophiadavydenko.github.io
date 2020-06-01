@@ -1,0 +1,253 @@
+@font-face {
+    font-family: 'Silk Serif';
+    src: local('Silk Serif Medium'), local('Silk-Serif-Medium'),
+        url('SilkSerif-Medium.woff2') format('woff2'),
+        url('SilkSerif-Medium.woff') format('woff'),
+        url('SilkSerif-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+#preload {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100vh;
+    width: 100vw;
+    max-width: 100%;
+    overflow: hidden;
+    z-index: 2020;
+    background-color: black;
+    position: fixed;
+}
+
+#preload {
+    z-index: 2020;
+    background-color: black;
+    animation-name: preloader-frame-fade;
+    animation-duration: 1.5s;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+    visibility: hidden;
+    width: 0;
+    animation-timing-function: ease-out;
+}
+
+@keyframes preloader-frame-fade {
+    0% {
+        visibility: visible;
+        width: 100vw;
+    }
+
+    60% {
+        width: 100vw;
+    }
+
+    99% {
+        width: 0;
+    }
+
+    100% {
+        visibility: hidden;
+    }
+}
+
+.page {
+    width: 100%;
+    margin: auto;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.grid_2 {
+    position: fixed;
+    z-index: 4;
+}
+
+.grid_3 {
+    position: fixed;
+    z-index: 4;
+}
+
+.grid_4 {
+    position: fixed;
+    z-index: 4;
+}
+
+.swiper-container,
+.swiper-slide {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+body {
+    font-family: 'Univers LT Std';
+    font-weight: bold;
+    font-style: normal;
+    font-size: 0.7em;
+    line-height: 3vh;
+    background-color: #111111;
+    color: white;
+    height: 100vh;
+    width: 100wh;
+}
+
+h1 {
+    font-size: 4em;
+    margin: 0;
+    padding: 0;
+    line-height: 5vh;
+}
+
+h2 {
+    font-size: 2em;
+    letter-spacing: 0.1em;
+    margin-top: 2vh;
+    margin-bottom: 0;
+    margin-right: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+}
+
+ul {
+    padding-left: 0;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    padding-inline-start: 0px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.cirkle_indicator {
+    max-height: 100%;
+    display: grid;
+    align-self: end;
+}
+
+span {
+    color: transparent;
+}
+
+.number_indicator {
+    transform: rotate(-90deg);
+    display: grid;
+    justify-self: start;
+    letter-spacing: 1em;
+}
+
+.menu_line {
+    display: grid;
+    justify-self: end;
+    align-self: start;
+}
+
+.hamburger {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.line_1 {
+    width: 20px;
+    border-bottom: 0.3px solid white;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+
+.line_2 {
+    width: 20px;
+    border-bottom: 0.3px solid white;
+    top: 0;
+    left: 0;
+    padding-top: 1.5vh;
+    z-index: 3;
+}
+
+.socials_group {
+    display: grid;
+    align-self: end;
+    padding-bottom: 0;
+    margin-left: 1.6vw;
+}
+
+.socials_group li {
+    margin-right: 2vw;
+}
+
+.socials_group a {
+    padding-bottom: 0;
+    margin-bottom: 0;
+    letter-spacing: 0.3em;
+}
+
+.socials_group ul {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    letter-spacing: 0.2en;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    line-height: 1vh;
+}
+
+.line {
+    height: 2.5vh;
+    border-left: 0.3px solid white;
+}
+
+.noise {
+    z-index: 10;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    opacity: .3;
+    z-index: 2;
+}
+
+.cursor-wrap {
+    position: fixed;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    z-index: 100;
+}
+
+.cursor {
+    position: fixed;
+    top: -30px;
+    left: -30px;
+    pointer-events: none;
+    z-index: 100;
+}
+
+.circle {
+    transform: scale(0.8);
+    transition: all 0.2s ease-in-out;
+    z-index: 100;
+}
+
+@media screen and (max-width: 786px) {
+
+    .number_indicator {
+        display: none;
+    }
+
+    .cirkle_indicator {
+        display: none;
+    }
+}

@@ -1,0 +1,142 @@
+.scrolling-wrapper {
+    display: grid;
+    height: 100vh;
+    width: 100vw;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-column-gap: 30px;
+    grid-template-rows: repeat(9, 1fr);
+    grid-template-areas: "sign_header menu_line"
+        "logo_text logo_seaction scroll_indicator scroll_line"
+        "servises_seaction servises_seaction"
+        "logo_seaction logo_seaction"
+        "sign_seaction""sign_seaction"
+        "servises_seaction servises_list"
+        "cirkle_indicator socials";
+    height: 100vh;
+    width: 100vw;
+}
+
+body {
+    margin: 0 auto;
+}
+
+.sign_header {
+    grid-column: 2;
+    grid-row: 2;
+    grid-area: sign_header menu_line;
+
+}
+
+.menu_line {
+    grid-column: -4/-2;
+    grid-row: 2/5;
+    grid-area: sign_header menu_line;
+}
+
+.scroll_indicator {
+    grid-area: logo_text logo_seaction scroll_indicator scroll_line;
+    grid-column: -2/-4;
+    grid-row: -3;
+}
+
+.scroll_line {
+    grid-area: logo_seaction logo_text scroll_indicator scroll_line;
+    grid-column: -3/-2;
+    grid-row: 5/6;
+}
+
+.servises_seaction {
+    grid-column: 4/-2;
+    grid-area: servises_seaction servises_seaction;
+    grid-row: 2/-2;
+}
+
+.and {
+    grid-column: 4/-5;
+    grid-area: servises_seaction servises_seaction;
+    grid-row: 2/-3;
+}
+
+.grid_2 {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-column-gap: 30px;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: "sign_header menu_line";
+    width: 100vw;
+    height: calc(100vh - 78vh);
+}
+
+body {
+    margin: 0 auto;
+}
+
+.sign_header {
+    grid-column: 2;
+    grid-row: 2;
+    grid-area: sign_header menu_line;
+
+}
+
+.menu_line {
+    grid-column: -4/-2;
+    grid-row: 2/5;
+    grid-area: sign_header menu_line;
+}
+
+.grid_3 {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-column-gap: 30px;
+    grid-template-rows: repeat(9, 1fr);
+    grid-template-areas: "cirkle_indicator cirkle_indicator";
+    width: calc(100vw - 87vw);
+    height: 100vh;
+}
+
+.cirkle_indicator {
+    grid-area: cirkle_indicator cirkle_indicator;
+    grid-column: 2;
+    grid-row: -3;
+}
+
+.number_indicator {
+    grid-area: cirkle_indicator timeline;
+    grid-column: 2;
+    grid-row: 5;
+}
+
+.grid_4 {
+    grid-column-gap: 30px;
+    margin-top: 87.5vh;
+    margin-left: 85.2vw;
+}
+
+@media screen and (max-width: 890px) {
+
+    .servises_seaction {
+        grid-column: 3/-2;
+        grid-area: servises_seaction servises_seaction;
+        grid-row: 2/-2;
+    }
+
+}
+
+@media screen and (max-width: 786px) {
+
+    .servises_seaction {
+        grid-column: 2/-2;
+        grid-area: servises_seaction servises_seaction;
+        grid-row: 2/-2;
+    }
+
+    .grid_4 {
+        margin-top: 87.5vh;
+        margin-left: 43vw;
+    }
+
+}

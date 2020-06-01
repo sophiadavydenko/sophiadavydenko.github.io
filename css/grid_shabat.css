@@ -1,0 +1,41 @@
+.grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-column-gap: 30px;
+    grid-template-rows: repeat(9, 1fr);
+    grid-template-areas: "sign_header menu_line"
+        "cirkle_indicator timeline";
+    height: 100vh;
+}
+
+body {
+    margin: 0 auto;
+}
+
+.sign_header {
+    grid-column: 2;
+    grid-row: 2;
+    grid-area: sign_header menu_header;
+    z-index: 2;
+}
+
+.menu_line {
+    grid-column: -4/-2;
+    grid-row: 2/5;
+    grid-area: sign_header menu_line;
+    z-index: 5;
+}
+
+.image_1 {
+    grid-column: 1/-1;
+    grid-row: 1/9;
+    z-index: 1;
+}
+
+.cirkle_indicator {
+    grid-area: cirkle_indicator timeline;
+    grid-column: 2;
+    grid-row: -3;
+    z-index: 5;
+}
+

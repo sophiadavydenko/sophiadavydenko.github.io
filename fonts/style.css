@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Silk Serif';
+    src: local('Silk Serif Medium'), local('Silk-Serif-Medium'),
+        url('SilkSerif-Medium.woff2') format('woff2'),
+        url('SilkSerif-Medium.woff') format('woff'),
+        url('SilkSerif-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+  }

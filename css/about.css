@@ -1,0 +1,50 @@
+.signature_about {
+    display: grid;
+    justify-self: start;
+    align-self: center;
+}
+
+.about_title {
+    display: grid;
+    justify-self: start;
+    align-self: end;
+}
+
+.text_about {
+    padding-top: 3vh;
+}
+
+.explanation_text {
+    display: grid;
+    align-self: end;
+}
+
+.explanation_text h1 {
+    line-height: 6vh;
+}
+
+.more {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 1.5vh;
+    margin-bottom: 2vw;
+}
+
+.line_more {
+    margin-right: 2vh;
+    width: 5vh;
+    border-bottom: 0.3px solid white;
+}
+
+.more a:hover {
+    animation: fadeIn;
+    animation-duration: 2s;
+}
+
+@media screen and (max-width: 575px) {
+
+    .explanation_text {
+        display: none;
+    }
+}

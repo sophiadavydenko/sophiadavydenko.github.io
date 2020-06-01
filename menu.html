@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>menu</title>
+    <link rel="stylesheet" href="css/grid_menu.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/global.css">
+    <link href="https://db.onlinewebfonts.com/c/d8ce9acf59417a1dd232886ec9bf0838?family=Univers+LT+Std" rel="stylesheet"
+          type="text/css"/>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" rel="stylesheet"/>
+</head>
+
+<body>
+<div class="grid">
+    <div class="sign_header">
+        <div class="cerchio" data-dist="2">
+            <a class="menu-link" href="index.html">
+                <img src="images/logo_sign_davyd.svg" height="19px"></a>
+        </div>
+    </div>
+
+    <div class="menu_line">
+        <a href="index.html">
+            <button class="cerchio" data-dist="2">
+                <div class="line_1"></div>
+            </button>
+        </a>
+    </div>
+
+    <div class="list_site">
+        <a class="menu-link" href="index.html#home">
+            <h1>Home</h1>
+        </a>
+
+        <a class="menu-link" href="index.html#works">
+            <h1>Works</h1>
+        </a>
+
+        <a class="menu-link" href="index.html#contacts">
+            <h1>Contacts</h1>
+        </a>
+
+        <a class="menu-link" href="index.html#about">
+            <h1>About</h1>
+        </a>
+    </div>
+
+    <div class="socials_seaction">
+        <p>Socials</p>
+        <ul class="socials">
+            <li class="menu-item"><a class="menu-link" href="works">Behance</a></li>
+            <li class="menu-item"><a class="menu-link" href="about">Instagram</a></li>
+            <li class="menu-item"><a class="menu-link" href="contacts">Facebook</a></li>
+        </ul>
+    </div>
+
+    <div class="text_email">
+        <p>Say Hi!</p>
+        <a href="maito:hello@davyd.com">
+            <p1>hello@davyd.com</p1>
+        </a>
+    </div>
+
+    <canvas id="noise" class="noise"></canvas>
+
+    <div class="cursor-wrap js-cursor-wrap">
+        <div class="cursor js-cursor">
+            <svg height="60" width="60" class="circle">
+                <circle cx="30" cy="30" r="26" stroke="#fff" stroke-width=".8" fill="transparent"/>
+            </svg>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="js/cursor.js"></script>
+<script src="js/noise.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js"></script>
+</body>
+</html>

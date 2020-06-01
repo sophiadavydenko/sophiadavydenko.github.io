@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>davyd</title>
+    <link rel="stylesheet" href="css/grid.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/grid_works.css">
+    <link rel="stylesheet" href="css/works.css">
+    <link rel="stylesheet" href="css/grid_about.css">
+    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/grid_contacts.css">
+    <link rel="stylesheet" href="css/contacts.css">
+    <link href="https://db.onlinewebfonts.com/c/d8ce9acf59417a1dd232886ec9bf0838?family=Univers+LT+Std" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css" />
+    <link href="https://db.onlinewebfonts.com/c/d8ce9acf59417a1dd232886ec9bf0838?family=Univers+LT+Std" rel="stylesheet" type="text/css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" rel="stylesheet" />
+    <style>
+        .swiper-container,
+        .swiper-slide {
+            width: 100vw;
+            height: 100vh;
+            overflow: hidden;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="preload"></div>
+    <canvas id="noise" class="noise"></canvas>
+
+    <div class="cursor-wrap js-cursor-wrap">
+        <div class="cursor js-cursor">
+            <svg height="60" width="60" class="circle">
+                <circle cx="30" cy="30" r="26" stroke="#fff" stroke-width=".8" fill="transparent" />
+            </svg>
+        </div>
+    </div>
+
+    <div class="grid_2">
+        <div class="sign_header">
+            <div class="cerchio" data-dist="2">
+                <a class="menu-link" href="index.html">
+                    <img src="images/logo_sign_davyd.svg" height="19px"></a>
+            </div>
+        </div>
+
+        <div class="menu_line">
+            <div class="cerchio" data-dist="2">
+                <a href="menu.html">
+                    <div class="lines">
+                        <div class="line_1"></div>
+                        <div class="line_2"></div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="grid_3">
+        <div class="cirkle_indicator chart cerchio" id="graph" data-percent="25" data-dist="2"></div>
+        <div class="number_indicator">
+            <p>1/4</p>
+        </div>
+    </div>
+
+    <div class="grid_4">
+        <div class="socials_group">
+            <ul class="info">
+                <li class="cerchio" data-dist="2"><a class="info-link" href="be">BE</a></li>
+
+                <li class="cerchio" data-dist="2"><a class="info-link" href="in">IN</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <div class="grid" id="home">
+                    <div class="scroll_line">
+                        <span class="css-loader-line"></span>
+                    </div>
+
+                    <div class="servises_seaction">
+                        <a href="">
+                            <p>We are<br> DAVYD,<br>specialized in<br>
+                                <u>branding </u>& <u>packaging</u></p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper-slide">
+                <div class="grid" id="works">
+                    <div class="number_works">
+                        <p>01</p>
+                    </div>
+
+                    <div class="signature_works">
+                        <p>our featured works</p>
+                    </div>
+
+                    <div class="name_work">
+                        <h1>Mie&Tie</h1>
+                    </div>
+
+                    <div class="additional_text">
+                        <h2>Packaging</h2>
+                    </div>
+
+                    <div class="photo_work">
+                        <a class="photo_work" href="mie&tea.html" data-tilt>
+                            <img src="images/mie&tie/mie&tea.jpg">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper-slide">
+                <div class="grid works">
+                    <div class="number_works">
+                        <p>02</p>
+                    </div>
+
+                    <div class="signature_works">
+                        <p>our featured works</p>
+                    </div>
+
+                    <div class="name_work">
+                        <h1>Holguin 99</h1>
+                    </div>
+
+                    <div class="additional_text">
+                        <h2>Packaging</h2>
+                    </div>
+
+                    <div class="photo_work">
+                        <a class="photo_work" href="holguin.html" data-tilt>
+                            <img src="images/holguin/h.jpg">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper-slide">
+                <div class="grid">
+                    <div class="number_works">
+                        <p>03</p>
+                    </div>
+
+                    <div class="signature_works">
+                        <p>our featured works</p>
+                    </div>
+
+                    <div class="name_work">
+                        <h1>Liudmila Davydenko</h1>
+                    </div>
+
+                    <div class="additional_text">
+                        <h2>Branding & Catalog</h2>
+                    </div>
+
+                    <div class="photo_work">
+                        <a class="photo_work" href="ld.html" data-tilt>
+                            <img src="images/ld/ld.jpg">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper-slide">
+                <div class="grid" id="about">
+                    <div class="signature_about">
+                        <p>let’s work together</p>
+                    </div>
+
+                    <div class="about_title">
+                        <h1>About</h1>
+                    </div>
+
+                    <div class="explanation_text">
+                        <h1>Davyd is a creative design <br>team</h1>
+                    </div>
+
+                    <div class="text_about">
+                        <p>We are focused on creating a mindful, creative and assisting design. We believe that responsible stylish design can help brands and ideas have a confident start, implement positive changes, be recognizable and charm clients, become stronger and see the perspective.<br></p>
+                        <p>Doing our best today in visual communications we are changing our World for better tomorrow.</p>
+                        <div class="more">
+                            <div class="line_more"></div>
+                            <p><a class="menu-link" href="about_more.html">learn more</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper-slide">
+                <div class="grid" id="contacts">
+                    <div class="signature">
+                        <p>let’s work together</p>
+                    </div>
+
+                    <div class="contacts_title">
+                        <h1>Contacts</h1>
+                    </div>
+
+                    <div class="socials_seaction">
+                        <p>Socials</p>
+                        <ul class="socials">
+                            <li class="menu-item"><a class="menu-link" href="works">Behance</a></li>
+                            <li class="menu-item"><a class="menu-link" href="about">Instagram</a></li>
+                            <li class="menu-item"><a class="menu-link" href="contacts">Facebook</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="text_email">
+                        <p>Say Hi!</p>
+                        <a href="maito:hello@davyd.com">
+                            <p1>hello@davyd.com</p1>
+                        </a>
+                    </div>
+
+                    <div class="scroll_indicator">
+                        <p>no more scroll</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/cursor.js"></script>
+    <script src="js/noise.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function(event) {
+            /* docs https://swiperjs.com/api/ */
+            var swiper = new Swiper('.swiper-container', {
+                /* docs https://swiperjs.com/api/#components */
+                direction: 'horizontal',
+                mousewheel: true,
+                spaceBetween: 30,
+                hashNavigation: {
+                    watchState: true,
+                },
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
+                },
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+                /* docs https://swiperjs.com/api/#events */
+                on: {
+                    init: function() {},
+                    slideChange: function() {
+                        document.querySelector(".number_indicator p").innerHTML =
+                            (this.activeIndex + 1) + "/" + this.slides.length;
+
+                        if (typeof drawCircle === "function") {
+                            pt = (this.activeIndex + 1) / this.slides.length;
+                            console.log(pt);
+                            drawCircle('white', 1, pt);
+                        }
+
+
+                    },
+                    transitionStart: function() {},
+                    transitionEnd: function() {},
+                    reachBeginning: function() {},
+                    reachEnd: function() {},
+                    resize: function() {},
+                },
+            });
+        });
+    </script>
+
+    <!-- circkle chart-->
+    <script>
+        var el = document.getElementById('graph'); // get canvas
+
+        var options = {
+            percent: el.getAttribute('data-percent') || 25,
+            size: el.getAttribute('data-size') || 60,
+            lineWidth: el.getAttribute('data-line') || 1,
+            rotate: el.getAttribute('data-rotate') || 0
+        }
+
+        var canvas = document.createElement('canvas');
+        var span = document.createElement('span');
+        span.textContent = options.percent + '';
+
+        if (typeof(G_vmlCanvasManager) !== 'undefined') {
+            G_vmlCanvasManager.initElement(canvas);
+        }
+
+        var ctx = canvas.getContext('2d');
+        canvas.width = canvas.height = options.size;
+
+        el.appendChild(span);
+        el.appendChild(canvas);
+
+        ctx.translate(options.size / 2, options.size / 2); // change center
+        ctx.rotate((-1 / 2 + options.rotate / 180) * Math.PI); // rotate -90 deg
+
+        //imd = ctx.getImageData(0, 0, 240, 240);
+        var radius = (options.size - options.lineWidth) / 2;
+
+        var drawCircle = function(color, lineWidth, percent) {
+            percent = Math.min(Math.max(0, percent || 1), 1);
+            ctx.beginPath();
+            ctx.arc(0, 0, radius, 0, Math.PI * 2 * percent, false);
+            ctx.strokeStyle = color;
+            ctx.lineCap = 'round'; // butt, round or square
+            ctx.lineWidth = lineWidth
+            ctx.stroke();
+        };
+
+        drawCircle('#3c3c3b', options.lineWidth, 100 / 100);
+        drawCircle('white', options.lineWidth, options.percent / 100);
+
+    </script>
+</body>
+
+</html>
